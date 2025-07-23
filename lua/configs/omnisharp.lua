@@ -16,6 +16,14 @@ return function(on_attach, capabilities)
     root_dir = lspconfig.util.root_pattern("*.sln", "*.csproj", ".git"),
     on_attach = on_attach,
     capabilities = capabilities,
+    -- settings = {
+    --   FormattingOptions = {
+    --     EnableEditorConfigSupport = true,
+    --   },
+    --   Sdk = {
+    --     IncludePrereleases = true,
+    --   },
+    -- },
     settings = {
       FormattingOptions = {
         EnableEditorConfigSupport = true,
@@ -23,6 +31,12 @@ return function(on_attach, capabilities)
       Sdk = {
         IncludePrereleases = true,
       },
+      -- RoslynExtensionsOptions = {
+      --   EnableAnalyzersSupport = true,
+      --   EnableDecompilationSupport = true,
+      --   EnableImportCompletion = true,
+      --   EnableEditorConfigSupport = true,
+      -- },
     },
   }
 end

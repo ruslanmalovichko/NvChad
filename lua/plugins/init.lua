@@ -38,7 +38,7 @@ return {
         hide_during_completion = vim.g.ai_cmp,
         keymap = {
           -- accept = false, -- handled by nvim-cmp / blink.cmp
-          accept = "<Tab>",
+          accept = "<C-\\>",
           next = "<M-]>",
           prev = "<M-[>",
         },
@@ -150,5 +150,14 @@ return {
     dependencies = "nvzone/volt",
     opts = {},
     cmd = "FloatermToggle",
-  }
+  },
+  -- { -- Broken
+  --   "nvzone/showkeys",
+  --   cmd = "ShowkeysToggle",
+  --   opts = {
+  --     timeout = 1,
+  --     maxkeys = 5,
+  --     -- more opts
+  --   }
+  -- }
 }
