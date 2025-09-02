@@ -36,4 +36,16 @@ vim.api.nvim_create_autocmd("BufWritePre", {
   -- buffer = 0, -- 0 означает текущий буфер
 })
 
+-- Настройка viewoptions для сохранения позиции курсора и свёрнутых блоков
+vim.opt.viewoptions = { "cursor", "folds" }
+
+-- Автокоманды для сохранения и восстановления вида
+vim.api.nvim_create_autocmd("BufWinLeave", {
+    pattern = "*",
+    command = "mkview",
+})
+vim.api.nvim_create_autocmd("BufWinEnter", {
+    pattern = "*",
+    command = "silent! loadview",
+})
 
