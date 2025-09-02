@@ -3,7 +3,7 @@ local lspconfig = require "lspconfig"
 return function(on_attach, capabilities)
   lspconfig.omnisharp.setup {
     cmd = {
-      "/home/ruslan/.local/share/nvim/mason/packages/omnisharp/OmniSharp",
+      vim.fn.stdpath('data') .. "/mason/packages/omnisharp/OmniSharp",
       "-z",
       "--hostPID",
       tostring(vim.fn.getpid()),
