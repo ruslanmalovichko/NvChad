@@ -3,11 +3,11 @@ return {
   -- filetypes = { "php", "phtml", "module", "inc" },
   filetypes = { "php" },
   root_dir = require("lspconfig.util").root_pattern("composer.json", ".git"),
-  -- root_dir = "/media/ruslan/data-encrypted/docker-projects/ptprocover-upgrade-2",
+  -- root_dir = "/media/ruslan/data-encrypted/docker-projects/test",
   -- root_markers = { "composer.json", ".git", "vendor/" },
   -- root_markers = { "vendor/" },
   -- root_dir = function(fname)
-  --   return "/media/ruslan/data-encrypted/docker-projects/ptprocover-upgrade-2"
+  --   return "/media/ruslan/data-encrypted/docker-projects/test"
   -- end,
   -- on_attach = require("nvchad.configs.lspconfig").on_attach,
   init_options = {
@@ -24,16 +24,16 @@ return {
         maxSize = 5000000,
       },
       -- environment = {
-      --   documentRoot = "/media/ruslan/data-encrypted/docker-projects/ptprocover-upgrade-2",
+      --   documentRoot = "/media/ruslan/data-encrypted/docker-projects/test",
       --   includePaths = {
-      --     "/media/ruslan/data-encrypted/docker-projects/ptprocover-upgrade-2",
-      --     "/media/ruslan/data-encrypted/docker-projects/ptprocover-upgrade-2/html",
-      --     "/media/ruslan/data-encrypted/docker-projects/ptprocover-upgrade-2/html/core",
-      --     "/media/ruslan/data-encrypted/docker-projects/ptprocover-upgrade-2/html/core/includes",
-      --     "/media/ruslan/data-encrypted/docker-projects/ptprocover-upgrade-2/html/core/includes/bootstrap.inc",
-      --     "/media/ruslan/data-encrypted/docker-projects/ptprocover-upgrade-2/html/modules",
-      --     "/media/ruslan/data-encrypted/docker-projects/ptprocover-upgrade-2/html/themes",
-      --     "/media/ruslan/data-encrypted/docker-projects/ptprocover-upgrade-2/vendor",
+      --     "/media/ruslan/data-encrypted/docker-projects/test",
+      --     "/media/ruslan/data-encrypted/docker-projects/test/html",
+      --     "/media/ruslan/data-encrypted/docker-projects/test/html/core",
+      --     "/media/ruslan/data-encrypted/docker-projects/test/html/core/includes",
+      --     "/media/ruslan/data-encrypted/docker-projects/test/html/core/includes/bootstrap.inc",
+      --     "/media/ruslan/data-encrypted/docker-projects/test/html/modules",
+      --     "/media/ruslan/data-encrypted/docker-projects/test/html/themes",
+      --     "/media/ruslan/data-encrypted/docker-projects/test/vendor",
       --     "core/",
       --     "core/includes",
       --     "../vendor/"
