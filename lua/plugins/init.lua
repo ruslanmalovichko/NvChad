@@ -124,25 +124,25 @@ return {
   },
   {
     "lambdalisue/vim-suda",
-    event = "VeryLazy", -- или "BufReadPre" для загрузки при открытии файлов
+    event = "VeryLazy", -- or "BufReadPre" to load when opening files
     config = function()
       vim.g.suda_smart_edit = 1
     end,
   },
   {
     "nvim-tree/nvim-tree.lua",
-    -- Используйте 'opts' для переопределения или добавления настроек NvimTree.
+    -- Use 'opts' to override or add NvimTree settings.
     opts = {
       filters = {
-        dotfiles = false, -- Показывать скрытые файлы (начинающиеся с '.')
-        custom = {},       -- Сбросить любые пользовательские фильтры, если они были
+        dotfiles = false, -- Show hidden files (starting with '.')
+        custom = {},       -- Reset any custom filters if they were set
       },
       git = {
-        ignore = false, -- Игнорировать .gitignore (показывать все файлы, даже те, что в .gitignore)
+        ignore = false, -- Ignore .gitignore (show all files, even those in .gitignore)
       },
-      -- Здесь вы можете добавить любые другие настройки NvimTree, которые вам нужны,
-      -- например, 'view', 'update_focused_file' и т.д.
-      -- Они будут объединены с дефолтными настройками NvChad.
+      -- Here you can add any other NvimTree settings you need,
+      -- such as 'view', 'update_focused_file', etc.
+      -- They will be merged with the default NvChad settings.
     },
   },
   {
