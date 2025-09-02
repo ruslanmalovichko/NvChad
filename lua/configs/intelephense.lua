@@ -11,10 +11,10 @@ return {
   -- end,
   -- on_attach = require("nvchad.configs.lspconfig").on_attach,
   init_options = {
-    -- Укажи путь, если хочешь хранить кэш в определённой папке
+    -- Specify the path if you want to store the cache in a specific folder
     -- storagePath = "/tmp/intelephense",
     -- globalStoragePath = "/home/ruslan/.cache/intelephense",
-    -- licenceKey = "ваш_лицензионный_ключ" или путь к файлу
+    -- licenceKey = "your_license_key" or path to the file
     -- clearCache = true,
   },
   settings = {
