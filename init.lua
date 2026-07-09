@@ -35,3 +35,7 @@ require "autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+vim.o.list = true
+vim.o.listchars = 'tab:» ,lead:•,trail:•'
+
